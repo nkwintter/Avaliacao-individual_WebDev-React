@@ -1,7 +1,11 @@
 import './button.module.css'
+import '../../index.css'
 
-export function Button({text}){
-    return (
-        <button>{text}</button>
-    )
+
+export function Button({ toggleDarkMode, darkMode }) {
+  return (
+    <button onClick={toggleDarkMode}>
+      {darkMode ? '🌑 Modo Escuro' : '🌞 Modo Claro'}
+    </button>
+  )
 }
