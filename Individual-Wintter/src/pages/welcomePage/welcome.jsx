@@ -1,12 +1,13 @@
 import { useState } from "react"
 
-const [mensagem, setMensagem] = useState("Olá")
-
-function handleClick(){
-    setMensagem("Bem Vindo!")
-}
-
 export function Welcome(){
+
+    const [mensagem, setMensagem] = useState("Olá")
+
+    function handleClick(){
+        setMensagem("Bem Vindo!")
+    }
+
     return(
         <div>
             <h1>2: Mudar Texto com Botão</h1>

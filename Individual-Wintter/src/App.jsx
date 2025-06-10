@@ -8,9 +8,7 @@ function App() {
   
 
   return (
-    <BrowserRouter>
-      <Rotas />
-    </BrowserRouter>
+    <Rotas/>
   )
 }
 
