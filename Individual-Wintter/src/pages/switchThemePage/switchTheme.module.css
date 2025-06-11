@@ -1,0 +1,35 @@
+.containerClaro {
+    background: radial-gradient(circle,rgb(239, 255, 207) 0%, rgba(97, 255, 250, 1) 50%, rgba(69, 182, 252, 1) 100%);
+    /* background-color: #ffffff; */
+    color: #000000;
+}
+
+.containerEscuro {
+    background: radial-gradient(circle,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 74%, rgba(0, 145, 255, 1) 100%);
+    /* background-color: #1e1e1e; */
+    color: #ffffff;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a18ec;
+    color: white;
+    font-weight: bold;
+}
