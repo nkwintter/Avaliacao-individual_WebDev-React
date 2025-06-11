@@ -7,5 +7,7 @@
     background-color: #2a18ec;
     color: #ffffff;
     font-weight: bold;
-    place-self: top right;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
