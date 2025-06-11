@@ -1,0 +1,11 @@
+.btnHome{
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a18ec;
+    color: #ffffff;
+    font-weight: bold;
+    place-self: top right;
+}

@@ -1,5 +1,5 @@
 .containerClaro {
-    background: radial-gradient(circle,rgb(239, 255, 207) 0%, rgba(97, 255, 250, 1) 50%, rgba(69, 182, 252, 1) 100%);
+    background: radial-gradient(circle,rgb(190, 255, 218) 0%, rgba(97, 255, 250, 1) 50%, rgba(69, 182, 252, 1) 100%);
     /* background-color: #ffffff; */
     color: #000000;
 }
@@ -30,6 +30,6 @@ button {
     border: none;
     border-radius: 5px;
     background-color: #2a18ec;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
 }
