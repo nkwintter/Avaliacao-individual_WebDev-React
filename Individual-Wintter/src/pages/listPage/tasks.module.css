@@ -41,10 +41,11 @@ ul {
 }
 
 .btnRemover {
-  background-color: #ff5d41;
-  color: white;
+  background-color: #d1115a;
+  color: rgb(255, 255, 255);
   padding: 5px 10px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  line-height: 1;
 }
