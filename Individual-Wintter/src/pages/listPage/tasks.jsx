@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Tasks.module.css";
+import { HomeButton } from "../../elements/btnBackHome/btnBackHome";
 
 export function Tasks() {
   const [tarefa, setTarefa] = useState("");
@@ -15,6 +16,7 @@ export function Tasks() {
 
   return (
     <div className={styles.container}>
+      <HomeButton/>
       <h2>Lista de Tarefas</h2>
       <input
         type="text"

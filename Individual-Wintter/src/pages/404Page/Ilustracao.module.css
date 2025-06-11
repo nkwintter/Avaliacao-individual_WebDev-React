@@ -1,0 +1,12 @@
+.ilustracao-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.svg-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}

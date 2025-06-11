@@ -1,20 +1,29 @@
-import { useState } from "react"
+import React, { useState } from "react";
+import styles from "./welcome.module.css";
+import { HomeButton } from "../../elements/btnBackHome/btnBackHome";
 
-export function Welcome(){
+const { container } = styles;
 
-    const [mensagem, setMensagem] = useState("Olá")
+export function Welcome() {
+  const [mensagem, setMensagem] = useState("Olá!");
+  const [ctrMsg, setCtrMsg] = useState(true);
 
-    function handleClick(){
-        setMensagem("Bem Vindo!")
+  function handleclick(){
+    if(mensagem === "Olá!"){
+        setMensagem("Bem-vindo!");
     }
+    else{
+        setMensagem("Olá!");
+    }
+    
+    setCtrMsg(!ctrMsg)
+  }
 
-    return(
-        <div>
-            <h1>2: Mudar Texto com Botão</h1>
-            <p>{mensagem}</p>
-
-            <button onClick={handleClick}>Entrar</button>
-        </div>
-    )
-
+  return (
+    <div className={container}>
+        <HomeButton/>
+        <p>{mensagem}</p>
+        <button onClick={handleclick}>{ctrMsg ? "Entrar" : "Sair"}</button>
+    </div>
+  );
 }

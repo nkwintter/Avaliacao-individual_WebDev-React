@@ -1,13 +1,17 @@
-.btnHome{
-    padding: 10px 20px;
-    margin-top: 15px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #2a18ec;
-    color: #ffffff;
-    font-weight: bold;
+.btnHome {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 20px;     
+    left: 20px;     
+    z-index: 1000;   
+    padding: 10px 20px;
+    background-color: #0ce0e3;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+    .Link{
+        color: #000000;
+    }
+
 }

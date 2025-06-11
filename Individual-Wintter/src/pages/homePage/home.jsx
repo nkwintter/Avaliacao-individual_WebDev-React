@@ -1,22 +1,22 @@
 import React from "react";
-import "./home.module.css"
 import { Link } from "react-router-dom";
+import styles from "./Home.module.css";
 
-export function Home(){
-    return(
-        
-        <div style={{ textAlign: "center", marginTop: "50px" }}>
-            {console.log("RENDERIZAÇÃO DA HOME")}
+const { container, botao } = styles;
+
+export function Home() {
+    return (
+        <div className={container}>
             <h1>Escolha uma Página</h1>
-            <div style={{ margin: "20px" }}>
+            <div className={botao}>
                 <Link to="/tema"><button>Tema Claro/Escuro</button></Link>
             </div>
-            <div style={{ margin: "20px" }}>
+            <div className={botao}>
                 <Link to="/welcome"><button>Mensagem de Boas-Vindas</button></Link>
             </div>
-            <div style={{ margin: "20px" }}>
+            <div className={botao}>
                 <Link to="/tasks"><button>Lista de Tarefas</button></Link>
             </div>
         </div>
-    )
+    );
 }

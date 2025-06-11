@@ -1,14 +1,12 @@
-import { Link } from 'react-router-dom'
-import './btnBHome.module.css'
+import { Link } from 'react-router-dom';
+import styles from './btnBHome.module.css';
 
-export function HomeButton(){
-    
-    return(
-        <div className='btnHome'>
-            <Link to='/'> 
-                <button>Home</button>
-            </Link>  
-        </div>
-    )
-    
+export function HomeButton() {
+  return (
+    <div className={styles.btnHome}>
+      <Link className={styles.Link} to='/'>
+        Home
+      </Link>
+    </div>
+  );
 }
