@@ -14,9 +14,14 @@ export function Tasks() {
     }
   };
 
+  const removerTarefa = (indexToRemove) => {
+    const novaLista = lista.filter((_, index) => index !== indexToRemove);
+    setLista(novaLista);
+  };
+
   return (
     <div className={styles.container}>
-      <HomeButton/>
+      <HomeButton />
       <h2>Lista de Tarefas</h2>
       <input
         type="text"
@@ -27,7 +32,12 @@ export function Tasks() {
       <button onClick={adicionarTarefa}>Adicionar</button>
       <ul>
         {lista.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} className={styles.tarefaItem}>
+            {item}
+            <button className={styles.btnRemover} onClick={() => removerTarefa(index)}>
+              Remover
+            </button>
+          </li>
         ))}
       </ul>
     </div>

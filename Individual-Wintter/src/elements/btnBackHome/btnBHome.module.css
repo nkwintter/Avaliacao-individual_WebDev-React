@@ -7,8 +7,10 @@
     background-color: #0ce0e3;
     font-weight: bold;
     border: none;
+    border-color: #5d00ff;
     border-radius: 50px;
     cursor: pointer;
+    box-shadow: 0 0 50px #7626ff;
 
     .Link{
         color: #000000;

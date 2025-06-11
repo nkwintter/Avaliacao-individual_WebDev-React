@@ -27,7 +27,24 @@ ul {
   padding: 0;
 }
 
-li {
-  padding: 5px 0;
-  border-bottom: 1px solid #ddd;
+.tarefaItem {
+  margin: 10px auto;
+  padding: 10px 20px;
+  width: fit-content;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.05); 
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.btnRemover {
+  background-color: #ff5d41;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
